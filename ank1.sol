@@ -1,6 +1,7 @@
 // SPDX-License-Identifier: Unlicensed
 pragma solidity ^0.8.7;
-// an ERC20 token is a token, like BTC or ETH, except it runs on the Ethereum chain
+
+// an ERC20 token is a Blockchain token running on the Ethereum chain which follows guidelines all Ethereum tokens adhere to.
 
 interface ERC20Interface {
     
@@ -19,7 +20,7 @@ interface ERC20Interface {
 }
 
 
-contract myToken is ERC20Interface {
+contract ankToken is ERC20Interface {
     
     string public symbol;
     string public name;
@@ -30,10 +31,10 @@ contract myToken is ERC20Interface {
     mapping(address => uint) private _balances;
     mapping(address => mapping(address => uint256)) private _allowances;
     
-    constructor() public {
+    constructor() {
         tokenOwner = msg.sender;
-        symbol = "ECC5.0";
-        name = "ECC fixed supply token";
+        symbol = "AND1.0";
+        name = "Ankit Dutta Blockchain Project: Fixed Supply Token";
         decimals = 18;
         
         _totalSupply = 1000000 * 10**uint(decimals);

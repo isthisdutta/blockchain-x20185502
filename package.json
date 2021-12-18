@@ -1,5 +1,5 @@
 {
-  "name": "nci",
+  "name": "blockchain",
   "version": "1.0.0",
   "description": "college project",
   "main": "contract.js",
@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/eoinco/nci_2021.git"
   },
-  "author": "",
+  "author": "Ankit Dutta",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/eoinco/nci_2021/issues"
@@ -27,6 +27,6 @@
     "keccak256": "^1.0.3",
     "npm": "^8.2.0",
     "sodium-native": "^3.3.0",
-    "web3": "^1.6.0"
+    "web3": "^1.6.1"
   }
 }
